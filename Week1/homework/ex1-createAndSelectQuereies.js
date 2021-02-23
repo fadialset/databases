@@ -11,6 +11,7 @@ const connection = mysql.createConnection({
 connection.connect();
 
 // Drop Database meetup!
+
 const dropDataBase = "DROP DATABASE meetup";
 connection.query(dropDataBase , function (error, results, fields) {
     if (error) {
@@ -21,6 +22,7 @@ connection.query(dropDataBase , function (error, results, fields) {
 
 
 // Create Database meetup If Not Exists!
+
 const createDataBase = "CREATE DATABASE IF NOT EXISTS meetup";
 connection.query(createDataBase, function (error, results, fields) {
     if (error) {
