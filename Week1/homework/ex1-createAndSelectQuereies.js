@@ -23,8 +23,8 @@ connection.query(dropDataBase , function (error, results, fields) {
 
 // Create Database meetup If Not Exists!
 
-const createDataBase = "CREATE DATABASE IF NOT EXISTS meetup";
-connection.query(createDataBase, function (error, results, fields) {
+const createDatabase = "CREATE DATABASE IF NOT EXISTS meetup";
+connection.query(createDatabase, function (error, results, fields) {
     if (error) {
         throw error;
     }
@@ -39,7 +39,7 @@ connection.query(("USE meetup"), (error, results, fields) => {
 
 const createQueryInvitee = "create table Invitee (invitee_no int, invitee_name varchar(50), invited_by varchar(50))";
 const createQueryRoom = "create table Room (room_no int, room_name varchar(50), floor_number int)";
-const createQueryMeeting = "create table Meeting (meeting_no int, meeting_title varchar(20), starting_time datetime, ending_time datetime, room_no int)";
+const createQueryMeeting = "create table Meeting (meeting_no int, meeting_title varchar(50), starting_time datetime, ending_time datetime, room_no int)";
 
 function createTable(createQueryTable,tableName){
     connection.query(createQueryTable, function (error, results, fields) {
@@ -64,18 +64,18 @@ const insertQueryInvitee = [
 
 const insertQueryRoom = [
     "insert into Room values (12, 'Room1', 1)",
-    "insert into Room values ( 37, 'Room7', 1)",
+    "insert into Room values (37, 'Room7', 1)",
     "insert into Room values (16, 'Room25', 2)",
     "insert into Room values (25, 'Room39', 3)",
     "insert into Room values (44, 'Room56', 5)"
     ];
 
 const insertQueryMeeting = [
-    "insert into Meeting values (1, 'Title1', '2020-02-22 08:00:00', '2020-02-22 10:00:00', 1)",
-    "insert into Meeting values (2, 'Title2', '2020-02-22 10:00:00', '2020-02-22 12:00:00', 2)",
-    "insert into Meeting values (3, 'Title3', '2020-02-22 12:00:00', '2020-02-22 13:00:00', 2)",
-    "insert into Meeting values (4, 'Title4', '2020-02-22 13:00:00', '2020-02-22 14:00:00', 1)",
-    "insert into Meeting values (5, 'Title5', '2020-02-22 15:00:00', '2020-02-22 17:00:00', 2)",
+    "insert into Meeting values (1, 'Title1', '2020-02-22 08:00:00', '2020-02-22 10:00:00', 12)",
+    "insert into Meeting values (2, 'Title2', '2020-02-22 10:00:00', '2020-02-22 12:00:00', 27)",
+    "insert into Meeting values (3, 'Title3', '2020-02-22 12:00:00', '2020-02-22 13:00:00', 25)",
+    "insert into Meeting values (4, 'Title4', '2020-02-22 13:00:00', '2020-02-22 14:00:00', 16)",
+    "insert into Meeting values (5, 'Title5', '2020-02-22 15:00:00', '2020-02-22 17:00:00', 44)",
     ];
 
     function insertRecords(insertQueryTable,tableName){

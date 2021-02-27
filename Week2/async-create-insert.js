@@ -1,11 +1,13 @@
-const util = require('util');
 const mysql = require('mysql');
+const util = require('util');
+
 
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'hyfuser',
   password: 'hyfpassword',
   database: 'userdb',
+  port: 3306
 });
 
 // Promisify the bind function of query function of connection object
