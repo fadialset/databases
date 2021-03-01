@@ -1,0 +1,16 @@
+[
+    {"author_name": "Ammamaria Markie","university": "Universidad de Guanajuato","date_of_birth": "1975-2-14","h_index": 1,"gender": "F","mentor":10},
+    {"author_name": "Stirling Dodshon","university": "Royal Academy of Music","date_of_birth": "1986-3-18","h_index": 2,"gender": "M","mentor":12},
+    {"author_name": "Brena Fulleylove","university": "Ithaca College","date_of_birth": "1956-5-10","h_index": 3,"gender": "F","mentor":1},
+    {"author_name": "Hurley Roxbee","university": "Caritas University","date_of_birth": "1967-4-17","h_index": 4,"gender": "M","mentor":2},
+    {"author_name": "Dorothee Oherlihy","university": "Balochistan University of Engineering and Technology Khuzdar","date_of_birth": "1966-11-23","h_index": 5, "gender": "F","mentor":3},
+    {"author_name": "Eleonora Simmance","university": "Rockford College","date_of_birth": "1962-12-9","h_index": 6,"gender": "F","mentor":null},
+    {"author_name": "Fletcher Tearny","university": "University of Oulu","date_of_birth": "1965-3-26","h_index": 7,"gender": "M","mentor":5},
+    {"author_name": "Rachele Dimbleby","university": "College of Europe", "date_of_birth": "1965-1-9","h_index": 8,"gender": "F","mentor":4},
+    {"author_name": "Berry Crosland","university": "Universidad de Guanajuato","date_of_birth": "1969-4-15","h_index": 9,"gender": "F","mentor":8},
+    {"author_name": "Lesli Vasyutin","university": "Nigerian Defence Academy","date_of_birth": "1969-4-28","h_index": 10,"gender": "F","mentor":6},
+    {"author_name": "Krishna Losselyong","university": "University of Calabar","date_of_birth": "1958-9-28","h_index": 11,"gender": "M","mentor":null},
+    {"author_name": "Kassia Cromarty","university": "Ithaca College","date_of_birth": "1968-7-1","h_index": 12,"gender": "F","mentor":9},
+    {"author_name": "Ned Philcott","university": "Belarussian State Agricultural Academy","date_of_birth": "1963-3-4","h_index": 13,"gender": "M","mentor":11},
+    {"author_name": "Cindra Coners","university": "Iceland University of Education","date_of_birth": "1952-9-28","h_index": 14,"gender": "F","mentor":null}
+]
