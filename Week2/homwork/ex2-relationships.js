@@ -20,11 +20,11 @@ const CREATE_RESEARCH_PAPERS_TABLE = `
 
 const CREATE_AUTHORS_RESEARCH_TABLE = `
     CREATE TABLE authors_research_papers(
-        author_no int not null,
-        research_paper_no int not null,
-        constraint fk_author foreign key(author_no) references authors(author_no),
-        constraint fk_paper foreign key(research_paper_no) references research_papers(paper_id),
-        primary key(author_no,research_paper_no)
+        author_no INT NOT NULL,
+        research_paper_no INT NOT NULL,
+        CONSTRAINT fk_author FOREIGN KEY(author_no) REFERENCES authors(author_no),
+        CONSTRAINT fk_paper FOREIGN KEY(research_paper_no) REFERENCES research_papers(paper_id),
+        PRIMARY KEY(author_no,research_paper_no)
     );`;
 
 

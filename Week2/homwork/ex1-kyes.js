@@ -19,11 +19,11 @@ async function seedDatabase() {
         author_name VARCHAR(255),
         university VARCHAR(255),
         date_of_birth DATE,
-        h_index int,
+        h_index INT,
         gender ENUM('m', 'f')
     );`;
     const ALTER_AUTHORS_TABLE = `
-        ALTER TABLE authors ADD COLUMN mentor int,
+        ALTER TABLE authors ADD COLUMN mentor INT,
         ADD CONSTRAINT  fk_mentor FOREIGN KEY (mentor) REFERENCES authors(author_no);`;
 
   connection.connect();
