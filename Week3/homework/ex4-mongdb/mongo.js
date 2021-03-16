@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const url = 'mongodb://localhost:27017';
 
-async function world() {
+async function getWorldsCities() {
     const client = new MongoClient(url,{ useNewUrlParser: true, useUnifiedTopology: true });
     try {
         await client.connect();
@@ -36,4 +36,4 @@ async function world() {
     }
 }
 
-world();
+getWorldsCities();

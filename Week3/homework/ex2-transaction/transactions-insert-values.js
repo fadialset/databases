@@ -31,13 +31,13 @@ async function seedDatabase() {
     const accountChangesPromise = accountChanges.map(accountChange => execQuery('INSERT INTO account_changes SET ?', accountChange));
  
     await Promise.all(accountPromise,accountChangesPromise);
-    connection.end();
+    
 
   } catch (error) {
     console.error(error.message);
-    connection.end();
+   
   } 
-
+  connection.end();
 }
 
 seedDatabase();

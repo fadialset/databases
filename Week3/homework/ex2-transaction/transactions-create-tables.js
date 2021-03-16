@@ -39,7 +39,6 @@ async function seedDatabase() {
     await execQuery(CREATE_ACCOUNT_CHANGES_TABLE);
   } catch (error) {
     console.error(error);
-    connection.end();
   }
 
   connection.end();
